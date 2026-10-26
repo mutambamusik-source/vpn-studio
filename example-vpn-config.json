@@ -1,0 +1,45 @@
+{
+  "Version": "1.0.0",
+  "ReleaseNotes": "Exemplo de configuração",
+  "UrlUpdate": "https://exemplo.com/update.json",
+  "Sms": "Mensagem de exemplo",
+  "SmsLink": "https://exemplo.com",
+  "EmailFeedback": "suporte@exemplo.com",
+  "UrlContato": "https://exemplo.com/contacto",
+  "UrlTermos": "https://exemplo.com/termos",
+  "CheckUser": "",
+  "Udp": [
+    {
+      "Name": "UDP Exemplo",
+      "TYPE": "UDP",
+      "FLAG": "AO",
+      "ServerIP": "udp.exemplo.com",
+      "ServerPort": "7300",
+      "CheckUser": ""
+    }
+  ],
+  "Servers": [
+    {
+      "Name": "Servidor de exemplo",
+      "TYPE": "SSH + SSL",
+      "FLAG": "AO",
+      "ServerIP": "ssh.exemplo.com",
+      "CheckUser": "",
+      "ServerPort": "22",
+      "SSLPort": "443",
+      "USER": "utilizador",
+      "PASS": ""
+    }
+  ],
+  "Networks": [
+    {
+      "Name": "Rede exemplo",
+      "FLAG": "AO",
+      "Payload": "CONNECT [host_port] HTTP/1.1\\r\\nHost: exemplo.com\\r\\n\\r\\n",
+      "SNI": "exemplo.com",
+      "TlsIP": "",
+      "ProxyIP": "",
+      "ProxyPort": ""
+    }
+  ]
+}
